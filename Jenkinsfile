@@ -20,13 +20,13 @@ pipeline {
             }
         }
 
-        stage('Generate HTML report') {
+      /*  stage('Generate HTML report') {
             steps {
                 cucumber buildStatus: "UNSTABLE",
-                        fileIncludePattern: '**/cucumber.json',
+                        fileIncludePattern: '**/  /*   cucumber.json',
                         jsonReportDirectory: 'target'
             }
 
-        }
+        } */
     }
 }
