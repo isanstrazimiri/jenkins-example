@@ -20,8 +20,7 @@ pipeline {
             }
         }
 
-
-   /*     stage ('Deployment Stage') {
+    stage ('Deployment Stage') {
             steps {
 
 		withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'PCF_LOGIN',
@@ -31,6 +30,6 @@ sh '/usr/local/bin/cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWO
  }
             }
         }
-	*/
+	
     }
 }
